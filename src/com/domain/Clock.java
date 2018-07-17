@@ -32,7 +32,7 @@ public class Clock {
 		g.fill(new Ellipse2D.Double(cx - radius, cy - radius, 2 * radius, 2 * radius));
 		g.setColor(Color.white);
 		g.draw(new Line2D.Double(cx, cy, cx + sLen * Math.cos(sAlpha), cy + sLen * Math.sin(sAlpha)));
-		g.draw(new Line2D.Double(cx, cy, cx + mLen * Math.cos(mAlpha), cy + mLen * Math.sin(mAlpha)));
+		g.draw(new Line2D.Double(cx, cy, cx + mLen * Math.cos(sAlpha), cy + mLen * Math.sin(sAlpha)));
 	}
 	public void move() {
 		sAlpha += Math.PI / 30;
