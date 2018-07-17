@@ -36,9 +36,12 @@ public class NorthPane extends JPanel {
 		NorthPane northPane = new NorthPane();
 		
 		f.getContentPane().add(northPane, BorderLayout.NORTH);
-		
 		f.setSize(300, 400);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setVisible(true);
+	}
+	
+	public  Clock getClock() {
+		return this.clock;
 	}
 }
